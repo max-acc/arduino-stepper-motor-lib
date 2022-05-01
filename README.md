@@ -1,5 +1,5 @@
 # <p align="center"><b>Using a Stepper Motor</b></p>
-The [program](../../tree/main/sample4 "Program") shows how to use a Stepper Motor (28-BYJ48) with a motor controller (L298N).  
+The [program](../../tree/main/stepper-motor "Program") shows how to use a Stepper Motor (28-BYJ48) with a motor controller (L298N).  
 The [picture](../../circuit.png "Circuit") shows how to connect the cables properly.
 
 
