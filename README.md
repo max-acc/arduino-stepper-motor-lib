@@ -1,6 +1,6 @@
 # <p align="center"><b>Using a Stepper Motor</b></p>
-The [program](../code.ino "Program") shows how to use a Stepper Motor (28-BYJ48) with a motor controller (L298N).  
-The [picture](../picture.png "Circuit") shows how to connect the cables properly.
+The [program](../../tree/main/sample4 "Program") shows how to use a Stepper Motor (28-BYJ48) with a motor controller (L298N).  
+The [picture](../../circuit.png "Circuit") shows how to connect the cables properly.
 
 
 Important Annotation: The Stepper Motor is designed for only 5V, otherwise it will get pretty hot and may brake. 
