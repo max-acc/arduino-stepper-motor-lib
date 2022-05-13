@@ -1,13 +1,13 @@
 # <p align="center"><b>Using a Stepper Motor</b></p>
-The code below shows, how to use a Stepper Motor (28-BYJ48) with a motor controller (UN2003).  
+The code below shows, how to use an unipolar Stepper Motor (28-BYJ48) with a Motor Controller (UN2003). (-> the L298N cannot be used because it is designed for bipolar Stepper Motors)   
 The [picture](../../circuit.png "Circuit") shows how to connect the cables properly (you can ignore the second motor).  
 
 There are three versions of the code:
 * [using the already implemented Stepper.h library with one motor (a second one is commented out)](#Stepper-Motor-with-the-Stepper-library)
-* [using the Stepper.h library as a foundation for simple object orientated programming (OOP)](#Stepper-Motor-with-OOP-and-without-a-library))
+* [using the Stepper.h library as a foundation for simple object orientated programming (OOP)](#Stepper-Motor-with-OOP-and-without-a-library)
 * [using the AccelStepper.h library with one motor (a second one is commented out)](#Stepper-Motor-with-the-AccelStepper-library)
 </br>
-Important Annotation: It is not necessary to connect a separate battery to the Stepper Motor controller (if you use the 5V version of the Stepper Motor), but it is recommended to use it (to protect the electronics). The Arduino is able to output 5V but it may not work flawlessly.
+Important Annotation: It is not necessary to connect a separate battery to the Stepper Motor Controller (if you use the 5V version of the Stepper Motor), but it is recommended to use one (to protect the electronics). The Arduino is able to output 5V but it may not work flawlessly.
 </br>  
 </br>
 </br>
@@ -18,8 +18,12 @@ The [provided program](../../tree/main/simple-stepper-control) will move the Ste
 </br>
 
 ### <p align="left">Stepper Motor with OOP and without a library</p>
+The [program](../../tree/main/simple-stepper-contorl-oop) is using the [Stepper.h library](https://github.com/arduino-libraries/Stepper) as a foundation for [object orientated programming](https://en.wikipedia.org/wiki/Object-oriented_programming). OOP is an important programming concept which is widely spread (many of the most widly used programming languages support it).  
+The [provided program](../../tree/main/simple-stepper-contorl-oop) is much more space efficient because some funtions of the Stepper.h library, which are for other Stepper Motors, are missing (because they are not needed for the 28-BYJ48 Stepper Motor).  
+</br>
+At first, a class called ```StepperMotor``` is being created. After that, some private variables for later usage are being initialised. Those variables are accessable inside the class, so you can't call them (it is kind of code protection). Only the class itself can call them. After that. some public funtions are initialised. The first function is a ```constructer``` because it has the same name as the class. The constructor is called every time when a new object is being created. This explicit constructor declares the previous initialiesed variables. The other functions just apply logic for moving a Stepper Motor.The rest of the program is almost the same as in the first [program](../../tree/main/simple-stepper-control). The only difference is that ```Stepper``` is replaced by ```StepperMotor```, because we changed the class name.  
+Understanding this code (the Stepper.h lib) leads to more control over the Stepper Motor.
 
-[program](../../tree/main/simple-stepper-contorl-oop)
 </br>
 
 ### <p align="left">Stepper Motor with the AccelStepper library</p>
