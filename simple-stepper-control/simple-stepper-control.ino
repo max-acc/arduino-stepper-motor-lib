@@ -8,15 +8,15 @@
 
 #include <Stepper.h>
 
-const uint8_t stepsPerTurn = 200;  // Number depends on the motor -> number of steps per turn (can be adjusted, but may won't work)
+const uint8_t stepsPerTurn = 200;  //Number depends on the motor -> number of steps per turn (can be adjusted, but may won't work)
 
 // Initialising the two stepper motors
-Stepper stepperMotor_0(stepsPerTurn, 2, 4, 3, 5);   // PWM Pins are not required, but the order of the Pins is relevant
+Stepper stepperMotor_0(stepsPerTurn, 2, 4, 3, 5);   //PWM Pins are not required, but the order of the Pins is relevant
 //Stepper stepperMotor_1(stepsPerTurn, 8, 10, 9, 11);
 
 
 // Initialising the stepper counters
-uint8_t stepperCount_0 = 0;   // Number of steps the motors have already taken
+uint8_t stepperCount_0 = 0;   //Number of steps the motors have already taken
 //uint8_t stepperCount_1 = 0;
 
 
@@ -48,7 +48,7 @@ void loop() {
 void steppersForward(){
   stepperMotor_0.step(1);
   stepperCount_0 += 1;
-  //stepperMotor_1.step(stepsPerTurn);  // Has to be inverted cause the motor is upside down ig
+  //stepperMotor_1.step(stepsPerTurn);  //Has to be inverted because the motor is upside down ig
   //stepperCount_1 += 1;
 }
 
