@@ -4,10 +4,10 @@ The [picture](../../circuit.png "Circuit") shows how to connect the cables prope
 
 There are three versions of the code:
 * [using the already implemented Stepper.h library with one motor (a second one is commented out)](#Stepper-Motor-with-the-Stepper-library)
-* [using the Stepper.h library as a foundation for simple object orientated programming (OOP)](#Stepper-Motor-with-OOP-(without library))
+* [using the Stepper.h library as a foundation for simple object orientated programming (OOP)](#Stepper-Motor-with-OOP-and-without-a-library))
 * [using the AccelStepper.h library with one motor (a second one is commented out)](#Stepper-Motor-with-the-AccelStepper-library)
 </br>
-Important Annotation: It is not necessary to connect a separate battery to the Stepper Motor controller if you use the 5V version of the Stepper Motor, but it is recommended to use it (to protect the electronics).  
+Important Annotation: It is not necessary to connect a separate battery to the Stepper Motor controller (if you use the 5V version of the Stepper Motor), but it is recommended to use it (to protect the electronics). The Arduino is able to output 5V but it may not work flawlessly.
 </br>  
 </br>
 </br>
@@ -17,8 +17,10 @@ The [Stepper.h library](https://github.com/arduino-libraries/Stepper) is already
 The [provided program](../../tree/main/simple-stepper-control) will move the Stepper(s) as they are might be intended. The program is pretty self-explanatory (there are a lot of comments).  
 </br>
 
-### <p align="left">Stepper Motor with OOP (without library)</p>
+### <p align="left">Stepper Motor with OOP and without a library</p>
 
+[program](../../tree/main/simple-stepper-contorl-oop)
+</br>
 
 ### <p align="left">Stepper Motor with the AccelStepper library</p>
 
