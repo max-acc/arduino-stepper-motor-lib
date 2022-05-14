@@ -45,7 +45,7 @@ It is recommended to change the bootloader to the standard one if you are workin
 </br>  
 
 ## Scripts
-In the [scripts folder](../../tree/main/scripts) are some scripts explaining in detail how to use the Stpper lib. Those scripts are only in German.
+In the [scripts folder](../../tree/main/scripts) are some scripts explaining in detail how to use the Stepper library. Those scripts are only in German.
 </br>  
 
 ## Sources
