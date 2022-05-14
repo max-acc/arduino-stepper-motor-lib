@@ -24,7 +24,6 @@ The [provided program](../../tree/main/simple-stepper-contorl-oop) is much more 
 </br>
 At first, a class called ```StepperMotor``` is being created. After that, some private variables for later usage are being initialised. Those variables are accessable inside the class, so you can't call them (it is kind of code protection). Only the class itself can call them. After that. some public funtions are initialised. The first function is a ```constructer``` because it has the same name as the class. The constructor is called every time when a new object is being created. This explicit constructor declares the previous initialised variables. The other functions just apply logic for moving a Stepper Motor. The rest of the program is almost the same as in the first [program](../../tree/main/simple-stepper-control). The only difference is that ```Stepper``` is replaced by ```StepperMotor```, because we changed the class name.  
 Understanding this code (the Stepper.h lib) leads to more control over the Stepper Motor.
-
 </br>
 
 ### <p align="left">Stepper Motor with the AccelStepper library</p>
@@ -34,6 +33,20 @@ https://github.com/waspinator/AccelStepper
 [program](../../tree/main/stepper-motor)
 
 Important Annotation: The Stepper Motor is designed for only 5V, otherwise it will get pretty hot and may brake. 
+</br>  
+</br>
+
+## Arduino NANO
+Since the Arduino NANO has a different chip built-in, you have to compile the program in another way which is pretty straight forward. Nevertheless it won't work if you use the standard bootloader.  
+To change the board, go to ```Tools``` -> ```Board``` and change it to ```Arduino Nano```.  
+After that, go to ```Tools``` -> ```Processor``` and change it to ```ATmega328P (Old Bootloader)```.  
+</br>
+It is recommended to change the bootloader to the standard one if you are working on other projects because the change of the booloader could lead to problems with other programs.
+</br>  
+
+## Scripts
+In the [scripts folder](../../tree/main/scripts) are some scripts explaining in detail how to use the Stpper lib. Those scripts are only in German.
+</br>  
 
 ## Sources
 * https://coeleveld.com/arduino-stepper-l298n/
