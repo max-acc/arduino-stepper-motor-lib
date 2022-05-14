@@ -1,6 +1,6 @@
 # <p align="center"><b>Using a Stepper Motor</b></p>
 The code below shows, how to use an unipolar Stepper Motor (28-BYJ48) with a Motor Controller (UN2003). (-> the L298N cannot be used because it is designed for bipolar Stepper Motors)   
-The [picture](../../StepperCircuit.png "Circuit") shows how to connect the cables properly (you can ignore the second motor).  
+The [picture](../../blob/main/StepperCircuit.png "Circuit") shows how to connect the cables properly (you can ignore the second motor).  
 
 There are three versions of the code:
 * [using the already implemented Stepper.h library with one motor (a second one is commented out)](#Stepper-Motor-with-the-Stepper-library)
