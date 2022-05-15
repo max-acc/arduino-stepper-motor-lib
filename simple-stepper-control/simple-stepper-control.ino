@@ -24,7 +24,7 @@ uint8_t stepperCount_0 = 0;   //Number of steps the motors have already taken
 // Setup
 void setup() {
   Serial.begin(9600);   // Initialising the serial port
-  stepperCount_0.setSpeed(50);  //Setting the Speed of the motors (can be adjusted, but may won't work)
+  stepperMotor_0.setSpeed(50);  //Setting the Speed of the motors (can be adjusted, but may won't work)
   //stepperMotor_1.setSpeed(50);
 }
 
