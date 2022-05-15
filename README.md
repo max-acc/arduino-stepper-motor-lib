@@ -27,12 +27,10 @@ Understanding this code (the Stepper.h lib) leads to more control over the Stepp
 </br>
 
 ### <p align="left">Stepper Motor with the AccelStepper library</p>
+In work!  
 
-https://github.com/waspinator/AccelStepper
-
+[library](https://github.com/waspinator/AccelStepper)  
 [program](../../tree/main/stepper-motor)
-
-Important Annotation: The Stepper Motor is designed for only 5V, otherwise it will get pretty hot and may brake. 
 </br>  
 </br>
 
@@ -49,12 +47,13 @@ In the [scripts folder](../../tree/main/scripts) are some scripts explaining in 
 </br>  
 
 ## Sources
-* https://coeleveld.com/arduino-stepper-l298n/
+In work!
+<!-- * https://coeleveld.com/arduino-stepper-l298n/
 * https://forum.arduino.cc/t/was-haltet-ihr-von-l298n-stepper-motor-driver/251568/4
 * https://www.reddit.com/r/arduino/comments/ie4koa/driving_28byj48_stepper_motor_with_l298n_driver/
 * https://rjdlee.com/arduino-wemos-with-l298n-controller-and-28byj-48-stepper-motor/
 * https://imgur.com/cRB2d5p
 * https://components101.com/motors/28byj-48-stepper-motor  
-All Links were valid on May 1st 2022.
+All Links were valid on May 1st 2022. -->
 
 [:arrow_up:Back to top](#Using-a-stepper-motor)
