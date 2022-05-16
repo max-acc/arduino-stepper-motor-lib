@@ -27,7 +27,7 @@ Understanding this code (the Stepper.h lib) leads to more control over the Stepp
 </br>
 
 ### <p align="left">Stepper Motor with the AccelStepper library</p>
-In work!  
+Work in prgress!
 
 [library](https://github.com/waspinator/AccelStepper)  
 [program](../../tree/main/stepper-motor)
@@ -47,7 +47,7 @@ In the [scripts folder](../../tree/main/scripts) are some scripts explaining in 
 </br>  
 
 ## Sources
-In work!
+Work in progress
 <!-- * https://coeleveld.com/arduino-stepper-l298n/
 * https://forum.arduino.cc/t/was-haltet-ihr-von-l298n-stepper-motor-driver/251568/4
 * https://www.reddit.com/r/arduino/comments/ie4koa/driving_28byj48_stepper_motor_with_l298n_driver/
